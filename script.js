@@ -1,4 +1,3 @@
-// Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM loaded, initializing app...');
 
@@ -63,10 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             startButton.style.display = 'none';
             controls.style.display = 'block';
 
-            // Start animation loop
             draw();
-
-            // Start background transition
             startBackgroundTransition();
 
         } catch (error) {
